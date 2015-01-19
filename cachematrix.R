@@ -2,8 +2,7 @@
 ## a square matrix and to provide this value in a cached form to
 ## avoid running potetnially time consuming code more than once
 
-## makeCacheMatorix will solve the inverse of a matrix and cache it
-
+## makeCacheMatrix will solve the inverse of a matrix and cache it
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -21,7 +20,6 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve will interact with makeCacheMatrix to provide the
 ## inverse of a matrix, only calculating when required
-
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   m <- x$getsolve()
